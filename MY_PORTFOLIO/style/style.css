@@ -1,0 +1,73 @@
+#hero {
+    padding-top: 5rem;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+}
+
+#hero-col1 {
+    text-align: start;
+}
+
+.custom-shape-divider-bottom-1670045342 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1670045342 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 129px;
+}
+
+.custom-shape-divider-bottom-1670045342 .shape-fill {
+    fill: #FFFFFF;
+}
+
+#my-image {
+    clip-path: circle(63.1% at 49% 49%);
+}
+
+.small {
+    max-width: 2rem;
+}
+
+progress::-webkit-progress-value {
+    background-color: rgb(14, 94, 199);
+    width: 100%;
+}
+
+progress::-webkit-progress-bar {
+    background-color: rgb(126, 179, 248);
+    height: 10px;
+}
+
+#projects {
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+
+#card-container {
+    background-color: #212529;
+    color: white;
+}
+
+#about-col1 {
+    display: flex;
+}
+/*
+#body-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+*/

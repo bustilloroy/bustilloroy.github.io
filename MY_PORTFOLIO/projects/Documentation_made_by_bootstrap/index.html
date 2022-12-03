@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="navbar navbar-expand-lg navbar-dark">
+            <div class="bg-dark" id="sidebar">
+                <div style="display: flex; justify-content: space-between;">
+                    <a href="#" class="text-warning" id="logo"><i class="bi bi-filetype-js"></i> JavaScript Documentation</a>
+
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navmenu"><i class="bi bi-list"></i></button>
+                </div>
+                
+                <div class="collapse navbar-collapse" id="navmenu">
+                    <ul class="text-start text-light list-unstyled py-2">
+                        <li class="py-2 mx-2 mb-2 btn btn-dark">
+                            <a href="#introduction" class="nav-link">Introduction</a>
+                        </li>
+                        <li class="py-2 mx-2 mb-2 btn btn-dark">
+                            <a href="#what_you_should_already_know" class="text-start nav-link" id="text-center">What You Should Already Know</a>
+                        </li>
+                        <li class="py-2 mx-2 mb-2 btn btn-dark">
+                            <a href="#javascript_and_java" class="nav-link">JavaScript and Java</a>
+                        </li>
+                        <li class="py-2 mx-2 mb-2 btn btn-dark">
+                            <a href="#hello_world" class="nav-link">Hello, World</a>
+                        </li>
+                        <li class="py-2 mx-2 mb-2 btn btn-dark">
+                            <a href="#variables" class="nav-link">Variables</a>
+                        </li>
+                        <li class="py-2 mx-2 mb-2 btn btn-dark">
+                            <a href="#declaring_variables" class="nav-link">Declaring Variables</a>
+                        </li>
+                        <li class="py-2 mx-2 mb-2 btn btn-dark">
+                            <a href="#variable_scope" class="nav-link">Variable Scope</a>
+                        </li>
+                        <li class="py-2 mx-2 mb-2 btn btn-dark">
+                            <a href="#global_variable" class="nav-link">Global Variable</a>
+                        </li>
+                        <li class="py-2 mx-2 mb-2 btn btn-dark">
+                            <a href="#constant" class="nav-link">Constant</a>
+                        </li>
+                        <li class="py-2 mx-2 mb-2 btn btn-dark">
+                            <a href="#data_types" class="nav-link">Data Types</a>
+                        </li>
+                        <li class="py-2 mx-2 mb-2 btn btn-dark">
+                            <a href="#if_else_statement" class="nav-link">If...else Statement</a>
+                        </li>
+                        <li class="py-2 mx-2 mb-2 btn btn-dark">
+                            <a href="#while_statement" class="nav-link">While Statement</a>
+                        </li>
+                        <li class="py-2 mx-2 mb-2 btn btn-dark">
+                            <a href="#function_declaration" class="nav-link">Function Declaration</a>
+                        </li>
+                        <li class="py-2 mx-2 btn btn-dark">
+                            <a href="#reference" class="nav-link">Reference</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+                <div class="" id="main-doc">
+                    <section class="container ml-5 mb-4" id="introduction">
+                        <h2>Introduction</h2>
+                            <p class="mx-4">JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.</p>
+                            <p class="mx-4">
+                                JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:
+                            </p>
+                            <ul>
+                                <li class="mx-5 mb-3">
+                                    Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation.
+                                </li>
+                                <li class="mx-5 mb-3">
+                                    Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side extensions allow an application to communicate with a database, provide continuity of information from one invocation to another of the application, or perform file manipulations on a server.
+                                </li>
+                            </ul>
+                    </section>
+
+                    <section class="container ml-5 mb-4" id="what_you_should_already_know">
+                        <h2>What you should already know</h2>
+                        <p class="mx-4">
+                            This guide assumes you have the following basic background:
+                        </p>
+                        <ul>
+                            <li class="mx-4 mb-3">
+                                A general understanding of the Internet and the World Wide Web (WWW).
+                            </li>
+                            <li class="mx-4 mb-3">
+                                Good working knowledge of HyperText Markup Language (HTML).
+                            </li>
+                            <li class="mx-4 mb-3">
+                                Some programming experience. If you are new to programming, try one of the tutorials linked on the main page about JavaScript.
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section class="container ml-5 mb-4" id="javascript_and_java">
+                        <h2>JavaScript and Java</h2>
+                        <p class="mx-4">
+                            JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows most Java expression syntax, naming conventions and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript.
+                        </p>
+                        <p class="mx-4">
+                            In contrast to Java's compile-time system of classes built by declarations, JavaScript supports a runtime system based on a small number of data types representing numeric, Boolean, and string values. JavaScript has a prototype-based object model instead of the more common class-based object model. The prototype-based model provides dynamic inheritance; that is, what is inherited can vary for individual objects. JavaScript also supports functions without any special declarative requirements. Functions can be properties of objects, executing as loosely typed methods.
+                        </p>
+                        <p class="mx-4">
+                            JavaScript is a very free-form language compared to Java. You do not have to declare all variables, classes, and methods. You do not have to be concerned with whether methods are public, private, or protected, and you do not have to implement interfaces. Variables, parameters, and function return types are not explicitly typed.
+                        </p>
+                    </section>
+
+                    <section class="container ml-5 mb-4" id="hello_world">
+                        <h2>Hello, World</h2>
+                        <p class="mx-4">
+                            To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:
+                        </p>
+                        <code class="mx-5 p-3 code">function greetMe(yourName) { alert("Hello " + yourName); }
+                            greetMe("World");</code>
+                        <p class="mx-4 mt-4">
+                            Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!
+                        </p>
+                    </section>
+
+                    <section class="container ml-5 mb-4" id="variables">
+                        <h2>Variables</h2>
+                        <p class="mx-4">
+                            You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.
+                        </p>
+                        <p class="mx-4">
+                            A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).
+                        </p>
+                        <p class="mx-4">
+                            You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the Unicode escape sequences as characters in identifiers. Some examples of legal names are Number_hits, temp99, and _name.
+                        </p>
+                    </section>
+
+                    <section class="container ml-5 mb-4" id="declaring_variables">
+                        <h2>Declaring Variables</h2>
+                        <p class="mx-4">
+                            You can declare a variable in three ways:
+                        </p>
+                        <p class="mx-4">
+                            With the keyword var. For example,
+                        </p>
+                        <code class="mx-5 p-3 code"> var x = 42.</code>
+                        <p class="mx-4 mt-4">
+                            This always declares a global variable. It generates a strict JavaScript warning. You shouldn't use this variant.
+                        </p>
+                        <p class="mx-4">
+                            With the keyword let. For example,
+                        </p>
+                        <code class="mx-5 p-3 code">let y = 13.</code>
+                        <p class="mx-4 mt-4">
+                            This syntax can be used to declare a block scope local variable. See Variable scope below.
+                        </p>
+                    </section>
+
+                    <section class="container ml-5 mb-4" id="variable_scope">
+                        <h2>Variable Scope</h2>
+                        <p class="mx-4">
+                            When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document. When you declare a variable within a function, it is called a local variable, because it is available only within that function.
+                        </p>
+                        <p class="mx-4">
+                            JavaScript before ECMAScript 2015 does not have block statement scope; rather, a variable declared within a block is local to the function (or global scope) that the block resides within. For example the following code will log 5, because the scope of x is the function (or global context) within which x is declared, not the block, which in this case is an if statement.
+                        </p>
+                        <code class="mx-5 p-3 code">if (true) { var x = 5; } console.log(x); // 5</code>
+                        <p class="mx-4 mt-4">
+                            This behavior changes, when using the let declaration introduced in ECMAScript 2015.
+                        </p>
+
+                        <code class="mx-5 p-3 code">if (true) { let y = 5; } console.log(y); // ReferenceError: y is
+                            not defined</code>
+                    </section>
+
+                    <section class="container ml-5 mb-4" id="global_variable">
+                        <h2>Global Variables</h2>
+                        <p class="mx-4">
+                            Global variables are in fact properties of the global object. In web pages the global object is window, so you can set and access global variables using the window.variable syntax.
+                        </p>
+                        <p class="mx-4">
+                            Consequently, you can access global variables declared in one window or frame from another window or frame by specifying the window or frame name. For example, if a variable called phoneNumber is declared in a document, you can refer to this variable from an iframe as parent.phoneNumber.
+                        </p>
+                    </section>
+
+                    <section class="container ml-5 mb-4" id="constant">
+                        <h2>Constant</h2>
+                        <p class="mx-4">
+                            You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is the same as for a variable identifier: it must start with a letter, underscore or dollar sign and can contain alphabetic, numeric, or underscore characters.
+                        </p>
+                        <code class="mx-5 mb-3 p-3 code">const PI = 3.14;</code>
+                        <p class="mx-4">
+                            A constant cannot change value through assignment or be re-declared while the script is running. It has to be initialized to a value.
+                        </p>
+                        <p class="mx-4">
+                            The scope rules for constants are the same as those for let block scope variables. If the const keyword is omitted, the identifier is assumed to represent a variable.
+                        </p>
+                        <p class="mx-4">
+                            You cannot declare a constant with the same name as a function or variable in the same scope. For example:
+                        </p>
+                        <code class="mx-5 mb-3 p-3 code">// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS
+                            WILL CAUSE AN ERROR ALSO function f() { const g = 5; var g;
+                            //statements }</code>
+                        <p class="mx-4">
+                            However, object attributes are not protected, so the following statement is executed without problems.
+                        </p>
+                        <code class="mx-5 mb-3 p-3 code">const MY_OBJECT = {"key": "value"}; MY_OBJECT.key =
+                            "otherValue";</code>
+                    </section>
+
+                    <section class="container ml-5 mb-4" id="data_types">
+                        <h2>Data Types</h2>
+                        <p class="mx-4">
+                            The latest ECMAScript standard defines seven data types:
+                        </p>
+                        <ul class="mx-5">
+                            <li>Six Data Types that are primitives:</li>
+                            <ul>
+                                <li class="mb-2">Boolean. true and false</li>
+                                <li class="mb-2">null. A special keyword denoting a null value. Because Javascript is case-sensitive, null is not the same as Null, NULL or any other variant</li>
+                                <li class="mb-2">
+                                    undefined. A top-level property whose value is undefined.
+                                </li>
+                                <li class="mb-2">
+                                    Number. 42 or 3.14159.
+                                </li>
+                                <li class="mb-2">
+                                    String. "Howdy"
+                                </li>
+                                <li class="mb-2">
+                                    Symbol (new in ECMAScript 2015). A data type whose instances are unique and immutable.
+                                </li>
+                            </ul>
+                            <li>and Object</li>
+                        </ul>
+                        <p class="mx-4">Although these data types are a relatively small amount, they enable you to perform useful functions with your applications. Objects and functions are the other fundamental elements in the language. You can think of objects as named containers for values, and functions as procedures that your application can perform.</p>
+                    </section>
+
+                    <section class="container ml-5 mb-4" id="if_else_statement">
+                        <h2>If else Statement</h2>
+                        <p class="mx-4">Use the if statement to execute a statement if a logical condition is true. Use the optional else clause to execute a statement if the condition is false. An if statement looks as follows:</p>
+                        <code class="mx-5 mb-3 p-3 code">if (condition) { statement_1; } else { statement_2; }</code>
+                        <p class="mx-4">condition can be any expression that evaluates to true or false. See Boolean for an explanation of what evaluates to true and false. If condition evaluates to true, statement_1 is executed; otherwise, statement_2 is executed. statement_1 and statement_2 can be any statement, including further nested if statements.</p>
+                        <p class="mx-4">You may also compound the statements using else if to have multiple conditions tested in sequence, as follows:</p>
+                        <code class="mx-5 mb-3 p-3 code">if (condition_1) { statement_1; } else if (condition_2) {
+                                statement_2; } else if (condition_n) { statement_n; } else {
+                                statement_last; }</code>
+                        <p class="mx-4">In the case of multiple conditions only the first logical condition which evaluates to true will be executed. To execute multiple statements, group them within a block statement ({ ... }) . In general, it's good practice to always use block statements, especially when nesting if statements:</p>
+                        <code class="mx-5 mb-3 p-3 code">if (condition) { statement_1_runs_if_condition_is_true;
+                                statement_2_runs_if_condition_is_true; } else {
+                                statement_3_runs_if_condition_is_false;
+                                statement_4_runs_if_condition_is_false; }</code>
+                        <p class="mx-4">
+                            If you need to use an assignment in a conditional expression, a common practice is to put additional parentheses around the assignment. For example:
+                        </p>
+                        <code class="mx-5 mb-3 p-3 code">if ((x = y)) { /* statements here */ }</code>
+                    </section>
+
+                    <section class="container ml-5 mb-4" id="while_statement">
+                        <h2>While Statement</h2>
+                        <p class="mx-4">A while statement executes its statements as long as a specified condition evaluates to true. A while statement looks as follows:</p>
+                        <code class="mx-5 mb-3 p-3 code">while (condition) statement</code>
+                        <p class="mx-4">
+                            If the condition becomes false, statement within the loop stops executing and control passes to the statement following the loop.
+                        </p>
+                        <p class="mx-4">
+                            The condition test occurs before statement in the loop is executed. If the condition returns true, statement is executed and the condition is tested again. If the condition returns false, execution stops and control is passed to the statement following while.
+                        </p>
+                        <p class="mx-4">
+                            To execute multiple statements, use a block statement ({ ... }) to group those statements.
+                        </p>
+                        <p class="mx-4">
+                            Example:
+
+                            The following while loop iterates as long as n is less than three:
+                        </p>
+                        <code class="mx-5 mb-3 p-3 code">var n = 0; var x = 0; while (n < 3) { n++; x += n; }</code>
+                        <p class="mx-4">
+                            With each iteration, the loop increments n and adds that value to x. Therefore, x and n take on the following values:
+                        </p>
+                        <ul class="mx-5">
+                            <li class="mb-3">After the first pass: n = 1 and x = 1</li>
+                            <li class="mb-3">After the second pass: n = 2 and x = 3</li>
+                            <li class="mb-3">After the third pass: n = 3 and x = 6</li>
+                        </ul>
+                        <p class="mx-4">After completing the third pass, the condition n < 3 is no longer true, so the loop terminates.</p>
+                    </section>
+
+                    <section class="container ml-5 mb-4" id="function_declaration">
+                        <h2>Function Declaration</h2>
+                        <p class="mx-4">A function definition (also called a function declaration, or function statement) consists of the function keyword, followed by:</p>
+                        <ul class="mx-5">
+                            <li class="mb-3">The name of the function.</li>
+                            <li class="mb-3">A list of arguments to the function, enclosed in parentheses and separated by commas.</li>
+                            <li class="mb-3">The JavaScript statements that define the function, enclosed in curly brackets, { }.</li>
+                        </ul>
+                        <p class="mx-4">For example, the following code defines a simple function named square:</p>
+                        <code class="mx-5 mb-3 p-3 code">function square(number) { return number * number; }</code>
+                        <p class="mx-4">The function square takes one argument, called number. The function consists of one statement that says to return the argument of the function (that is, number) multiplied by itself. The return statement specifies the value returned by the function.</p>
+                        <code class="mx-5 mb-3 p-3 code">return number * number;</code>
+                        <p class="mx-4">
+                            Primitive parameters (such as a number) are passed to functions by value; the value is passed to the function, but if the function changes the value of the parameter, this change is not reflected globally or in the calling function.
+                        </p>
+                    </section>
+
+                    <section class="container ml-5 mb-4" id="reference">
+                        <h2>Reference</h2>
+                        <ul class="mx-5">
+                            <li>All the documentation in this page is taken from<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank"> MDN</a> </li>
+                        </ul>   
+
+                        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+                            <i class="bi bi-arrow-up-circle text-dark h2"></i>
+                        </a>
+                    </section>
+                </div>
+            </div>
+</body>
+</html>
